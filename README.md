@@ -1,2 +1,0 @@
-# hackerrank-sandbox
-HackerRank Note
