@@ -35,12 +35,10 @@ function diagonalDifference(arr) {
     var leftDiagonal = 0
     var rightDiagonal = 0
     
-    if(size % 2 != 0){
-        for(let i = 0; i < size; i++){
-            leftDiagonal += arr[i][i]
-            rightDiagonal += arr[i][(size - 1) - i]
-        }       
-    }
+    for(let i = 0; i < size; i++){
+        leftDiagonal += arr[i][i]
+        rightDiagonal += arr[i][(size - 1) - i]
+    }       
     
     return Math.abs(leftDiagonal - rightDiagonal)
 }
