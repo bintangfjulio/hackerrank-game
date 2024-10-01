@@ -63,7 +63,7 @@ function countingSort(arr) {
     //     }
     // }
     
-    return arr
+    return arr.slice(0, 100)
 }
 
 function main() {
