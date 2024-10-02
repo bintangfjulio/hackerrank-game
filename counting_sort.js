@@ -32,7 +32,6 @@ function readLine() {
 function countingSort(arr) {
     // Write your code here
     let freq = {}
-    let constrain = 100
     
     arr.forEach((number) => {
       if(freq[number]){
@@ -42,7 +41,7 @@ function countingSort(arr) {
       }
     })
     
-    for(let i=0; i < constrain; i++){
+    for(let i=0; i < arr.length; i++){
         if(freq[i]){
             arr[i] = freq[i]
         } else {
@@ -50,13 +49,13 @@ function countingSort(arr) {
         }
     }
     
-    // const freq = new Array(constrain).fill(0);
+    // const freq = new Array(arr.length).fill(0);
     // arr.forEach((number) => {
     //     freq[number]++;
     // });
     
     // let sortedArr = [];
-    // for (let i = 0; i < constrain; i++) {
+    // for (let i = 0; i < arr.length; i++) {
     //     while (freq[i] > 0) {
     //         sortedArr.push(i);
     //         freq[i]--;
